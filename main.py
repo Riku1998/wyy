@@ -112,7 +112,7 @@ def qqsend(QQKEY, message):
         print('QQ消息推送完成！')
 
 def ppsend(PPKEY, message):
-    pp_url = 'http://pushplus.hxtrip.com/send?token={}&title=网易云游戏自动签到脚本&content={}&template=html'.format(PPKEY, message)
+    pp_url = 'http://www.pushplus.plus/send?token={}&title=网易云游戏自动签到脚本&content={}&template=html'.format(PPKEY, message)
     if pp_enable:
         print('正在使用PushPlus进行消息推送……')
         r.get(url=pp_url)
